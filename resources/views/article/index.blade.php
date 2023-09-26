@@ -6,4 +6,5 @@
         <h2>{{$article->name}}</h2>
         <div>{{Str::limit($article->body, 200)}}</div>
     @endforeach
+    {{$articles->links()}}
 @endsection
